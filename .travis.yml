@@ -1,10 +1,5 @@
-sudo: false
 language: java
 jdk:
   - oraclejdk8
 before_install:
   - chmod +x mvnw
-services:
-  - mysql
-before_build: ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V 
-build:  ./mvnw test -B
