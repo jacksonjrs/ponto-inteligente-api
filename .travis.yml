@@ -1,14 +1,3 @@
-dist: precise
-addons:
-  apt:
-    sources:
-      - travis-ci/sqlite3
-    packages:
-      - sqlite3
 language: java
 jdk:
   - oraclejdk8
-before_install:
-  - chmod +x mvnw
-services:
-  - mysql
