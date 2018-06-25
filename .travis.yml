@@ -3,3 +3,5 @@ jdk:
   - oraclejdk8
 before_install:
   - chmod +x mvnw
+install: true
+script: mvn clean package -DskipTests=true
